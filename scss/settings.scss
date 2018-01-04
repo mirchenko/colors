@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, Tahoma, Arial;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.j-content-center {
+  justify-content: center;
+}
+
+.a-i-center {
+  align-items: center;
+}
+
+.f-row-now {
+  display: flex;
+  flex-direction: row;
+}
+
+.margin-top-24 {
+  margin-top: 24px;
+}
+
+.margin-bottom-24 {
+  margin-top: 24px;
+}
+
+.padding-top-24 {
+  padding-top: 24px;
+}
+
+.padding-bottom-24 {
+  padding-bottom: 24px;
+}
+
+button {
+  min-width: 100px;
+  border: 0;
+  outline: 0;
+  font-size: 14px;
+  padding: 8px 8px;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #fff;
+
+  &.danger {
+    background-color: #c0392b;
+  }
+
+  &.primary {
+    background-color: #3498db;
+  }
+}
+
+
+.menu-wrapper {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  li {
+    margin-right: 24px;
+
+    a {
+      font-size: 24px;
+      text-decoration: none;
+      font-weight: 700;
+      color: #2c3e50;
+
+      &:hover {
+        color: #d35400;
+      }
+
+      &.active {
+        color: #d35400;
+      }
+    }
+  }
+}
+
+
+form {
+  max-width: 800px;
+  margin: 48px auto;
+  padding: 24px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0, .2);
+
+  .form-group {
+    display: flex;
+    margin-bottom: 8px;
+
+    &.checkbox {
+      flex-direction: row;
+
+      label {
+        margin-left: 8px;
+        -webkit-user-select: none;
+      }
+    }
+
+    &.input {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-bottom: 24px;
+
+      label {
+        font-size: 12px;
+        line-height: 18px;
+      }
+
+      input {
+        height: 24px;
+        min-width: 240px;
+        outline: 0;
+        border: 1px solid #ecf0f1;
+        border-radius: 2px;
+        margin: 2px 0;
+        text-indent: 2px;
+      }
+    }
+  }
+}
+
+span.error {
+  font-size: 12px;
+  line-height: 18px;
+  color: #c0392b;
+}
